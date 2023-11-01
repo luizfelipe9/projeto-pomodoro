@@ -6,3 +6,4 @@
 *<br /> Lindeia Karoline Lima do Carmo - RA:62113931*
 *<br /> Luiz Felipe Ribeiro da Cruz - RA:62121862* 
 *<br /> Rayla Silva Bernardino - RA:622121533*
+*<br /> Fabrício Santos Gesualdi - RA:62013084*
