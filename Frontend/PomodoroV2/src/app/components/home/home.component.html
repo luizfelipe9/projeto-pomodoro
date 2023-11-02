@@ -1,0 +1,58 @@
+<div class="main">
+
+    <div class="card-header">
+      <h1>
+        Mantenha o foco!
+      </h1>
+    </div>
+
+    <div class="progress-timer">
+        <div class="inner-timer">
+
+         <h2>
+          {{ workTimeHours < 10 ? '0' + workTimeHours : workTimeHours }} : {{ workTimeMinutes < 10 ? '0' + workTimeMinutes : workTimeMinutes }} : {{ workTimeSeconds < 10 ? '0' + workTimeSeconds : workTimeSeconds }}
+          </h2>
+        </div>
+    </div>
+
+    <div class="bottom-button">
+      <button (click)="start()">Iniciar</button>
+      <button (click)="stop()" >Parar</button>
+     <!--<button (click)="reset()">Reiniciar</button>-->
+    </div>
+
+</div>
+
+<div class="footer">
+  <div class="footButtons">
+
+    <!-- botão para abrir o modal -->
+<button class="bottomButton" (click)="openModal(modalTemplate)">Fazer tarefas</button>
+
+<!-- modal -->
+<ng-template #modalTemplate>
+
+  <div class="modal-header modal-header">
+    <h4 class="modal-title">Lista de Itens</h4>
+  </div>
+  <div class="modal-body modal-Body">
+    <ul>
+      <li *ngFor="let item of tarefas" class="list">
+        <div class="items">
+          <span>{{ item.tarefa }}</span>
+
+        <button type="button" class="modal-button" (click)="selecionarItem(item)">Selecionar</button>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <div class="modal-footer modal-foot">
+
+  </div>
+</ng-template>
+
+<button class="bottomButton" routerLink="task">Nova Tarefa</button>
+
+  </div>
+</div>
+

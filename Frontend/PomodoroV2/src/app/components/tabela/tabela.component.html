@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div class="card text-center">
+    <div class="card-header">
+      Featured
+    </div>
+
+    <div class="card-body">
+      <div class="tabela">
+        <table class="table table-responsive-lg">
+          <thead>
+            <tr>
+              <th scope="col" class="table-head">Tarefa</th>
+              <th scope="col" class="table-head">Tempo de execução</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let tarefa of tarefas">
+              <th scope="row">{{tarefa.tarefa}}</th>
+              <td>{{tarefa.hora}} : {{tarefa.minuto}} : {{tarefa.segundo}}</td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card-footer text-body-secondary">
+      <div class="buttons">
+        <button routerLink="">Voltar</button>
+      </div>
+    </div>
+  </div>
+
+</div>

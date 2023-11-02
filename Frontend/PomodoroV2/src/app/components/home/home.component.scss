@@ -1,0 +1,371 @@
+@import url('https://fonts.cdnfonts.com/css/agency-fb');
+
+.main {
+  display: flex;
+  flex-direction: column  ;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: transparent;
+
+  border-radius: 25px;
+
+
+}
+
+.card-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-header h1 {
+  font-weight: 800;
+  font-size: 50px;
+  color: #ECEFF1;
+}
+
+.card-header button {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 30px;
+  color: #455A64;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 15px;
+  margin: 20px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ECEFF1;
+    border-radius: 10rem;
+    z-index: -2;
+    cursor: pointer;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(#ECEFF1, 5%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.progress-timer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+
+.progress-timer button{
+  display: inline-block;
+  padding: 8px;
+  width: 53px;
+  border-radius: 50px;
+  color: #455A64;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 15px;
+  margin: 20px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ECEFF1;
+    border-radius: 10rem;
+    z-index: -2;
+    cursor: pointer;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(#ECEFF1, 25%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.inner-timer{
+
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #ECEFF1;
+}
+.inner-timer h2{
+  font-family: 'Agency FB', sans-serif;
+  font-weight: 900;
+  font-size:150px;
+  color: #eac2fc;
+}
+
+.bottom-button{
+  display: flex;
+  justify-content: stretch;
+  gap: 20px;
+  padding: 10px;
+}
+
+.bottom-button button{
+  display: inline-block;
+  padding: 8px;
+  border-radius: 30px;
+  color: #455A64;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 15px;
+  margin: 20px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ECEFF1;
+    border-radius: 10rem;
+    z-index: -2;
+    cursor: pointer;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(#ECEFF1, 25%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomButton{
+  display: inline-block;
+  padding: 8px;
+  border-radius: 30px;
+  color: #455A64;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 15px;
+  margin: 20px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ECEFF1;
+    border-radius: 10rem;
+    z-index: -2;
+    cursor: pointer;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(#ECEFF1, 25%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.modal-header{
+  background-color: #455A64;
+  color: #ECEFF1;
+}
+
+.modal-body{
+  background-color: #455A64;
+  color: #ECEFF1;
+  border: none;
+}
+
+.items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.items span{
+  font-size: 20px;
+}
+
+.modal-button{
+  display: inline-block;
+  padding: 3px;
+  border-radius: 30px;
+  color: #455A64;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 10px;
+  margin: 4px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ECEFF1;
+    border-radius: 10rem;
+    z-index: -2;
+    cursor: pointer;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(#ECEFF1, 25%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+
+.modal-foot{
+  background-color: #455A64;
+  color: #ECEFF1;
+  border: none;
+}
+
+

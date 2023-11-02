@@ -1,0 +1,39 @@
+<div class="card text-bg-dark">
+  <h5 class="card-header header">Crie uma nova tarefa</h5>
+  <div class="card-body body">
+
+    <div class="forms">
+      <form [formGroup]="form" (ngSubmit)="OnSubmit" #formDir="ngForm">
+
+        <div class="task">
+          <label for="tarefa" class="form-label">Tarefa</label>
+          <input class="form-control" type="text" formControlName="tarefa" placeholder="Estudar programação" aria-label="default input example"
+            required>
+        </div>
+
+        <div class="hours">
+          <div class="time">
+            <label for="hora" class="form-label">Horas</label>
+            <input class="form-control" type="number" formControlName="hora"  placeholder="HH" aria-label="default input example" required>
+          </div>
+          <div class="time">
+            <label for="minuto" class="form-label">Minutos</label>
+            <input class="form-control" type="number" formControlName="minuto"  placeholder="MM" aria-label="default input example" required>
+          </div>
+          <div class="time">
+            <label for="segundo" class="form-label">Segundos</label>
+            <input class="form-control" type="number" formControlName="segundo" placeholder="SS" aria-label="default input example" required>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <button (click)="OnSubmit()" [disabled]="form.invalid" class="btn btn-primary">
+      Salvar
+    </button>
+    <button routerLink="todo" class="btn btn-primary">
+      Minhas tarefas
+    </button>
+  </div>
+</div>
