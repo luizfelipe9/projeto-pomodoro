@@ -1,31 +1,35 @@
 <div class="container">
 
-  <div class="card text-center">
-    <div class="card-header">
-      Featured
+  <div class="card text-center text-bg-dark">
+    <div class="card-header header">
+      Minhas Tarefas
     </div>
 
-    <div class="card-body">
+    <div class="card-body body">
       <div class="tabela">
-        <table class="table table-responsive-lg">
-          <thead>
+        <table class="table table-responsive-lg text-bg-dark">
+          <thead class="text-bg-dark">
             <tr>
               <th scope="col" class="table-head">Tarefa</th>
               <th scope="col" class="table-head">Tempo de execução</th>
+              <th scope="col" class="table-head">Excluir</th>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor="let tarefa of tarefas">
               <th scope="row">{{tarefa.tarefa}}</th>
               <td>{{tarefa.hora}} : {{tarefa.minuto}} : {{tarefa.segundo}}</td>
+              <td>
+                <button class="btn btn-danger" (click)="remove(tarefa.id!)">Apagar</button>
+              </td>
           </tbody>
         </table>
       </div>
     </div>
 
-    <div class="card-footer text-body-secondary">
+    <div class="card-footer text-body-secondary footer">
       <div class="buttons">
-        <button routerLink="">Voltar</button>
+        <button class="btn btn-light" routerLink="">Voltar</button>
       </div>
     </div>
   </div>

@@ -19,7 +19,19 @@ export class TabelaComponent {
 
 
   getTarefas(): void{
-    this.tarefaService.getTarefas().subscribe((tarefas) => (this.tarefas = tarefas))
+    this.tarefaService.getTarefas().subscribe((items) => {
+
+      const data = items.data
+
+      this.tarefas = data
+
+    })
+  }
+
+ async remove(id: number){
+    this.tarefaService.deleteTarefas(id).subscribe()
+    window.location.reload();
+
   }
 
 }

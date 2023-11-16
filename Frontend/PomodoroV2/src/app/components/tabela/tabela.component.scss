@@ -1,8 +1,30 @@
+
+.body{
+  background-color: #455A64;
+}
+
+.header{
+  background-color: #455A64;
+}
+
+.footer{
+  background-color: #455A64;
+}
+
 table{
   min-width: 350px;
 }
 .table-head{
-  background-color: #ECEFF1;
+  background-color: #455A64;
+  color: white;
 }
 
+th, td{
+  color: white;
+  background-color: #455A64;
+}
+
+tbody{
+  background-color: #455A64;
+}
 

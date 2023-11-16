@@ -29,11 +29,14 @@
       </form>
     </div>
 
-    <button (click)="OnSubmit()" [disabled]="form.invalid" class="btn btn-primary">
+    <button (click)="OnSubmit()" [disabled]="form.invalid" class="btn btn-light">
       Salvar
     </button>
-    <button routerLink="todo" class="btn btn-primary">
+    <button routerLink="todo" class="btn btn-light">
       Minhas tarefas
+    </button>
+    <button routerLink="" class="btn btn-light">
+      Cancelar
     </button>
   </div>
 </div>

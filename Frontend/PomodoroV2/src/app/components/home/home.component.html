@@ -16,8 +16,10 @@
     </div>
 
     <div class="bottom-button">
-      <button (click)="start()">Iniciar</button>
-      <button (click)="stop()" >Parar</button>
+      <button (click)="start()" [hidden]="buttonDisabled" >Iniciar</button>
+      <button (click)="stop()" [hidden]="buttonStopDisabled" >Parar</button>
+      <button (click)="reset()" >Reset</button>
+      <button (click)="break()" >Descanso</button>
      <!--<button (click)="reset()">Reiniciar</button>-->
     </div>
 
@@ -41,7 +43,7 @@
         <div class="items">
           <span>{{ item.tarefa }}</span>
 
-        <button type="button" class="modal-button" (click)="selecionarItem(item)">Selecionar</button>
+        <button type="button" class="modal-button" (click)="selecionarItem(item)" >Selecionar</button>
       </div>
       </li>
     </ul>
@@ -55,4 +57,8 @@
 
   </div>
 </div>
+
+<audio #idAudio controls class="dnone">
+  <source type="audio/wav" src="../../../assets/music/MarioRelaxing.m4a">
+</audio>
 

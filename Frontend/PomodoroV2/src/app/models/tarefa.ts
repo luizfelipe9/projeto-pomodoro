@@ -4,5 +4,6 @@ export interface Tarefa {
   hora: number;
   minuto: number;
   segundo: number;
-
+  created_at?: Date;
+  updated_at?: Date;
 }
